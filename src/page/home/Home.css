@@ -1,3 +1,7 @@
+.home {
+    height: calc(100vh - 80px);
+}
+
 .home__video {
     position: absolute;
     top: 0;
