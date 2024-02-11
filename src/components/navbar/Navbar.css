@@ -7,15 +7,16 @@
     position: sticky;
     top: 0;
     z-index: 100;
-
 }
 
 .navbar__item {
     flex: 1;
 }
 
-.navbar__logo svg {
-    height: 12px;
+.navbar__logo img {
+    height: 35px;
+    width: 50px;
+    object-fit: cover;
     width: auto;
     display: flex;
     justify-content: flex-start;
@@ -42,18 +43,22 @@
     transition: .5s;
 }
 
-/* Navbar for logos */
+/* Navbar for icons */
 
-.navbar__logos>ul {
+.navbar__icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar__icons>ul {
     display: flex;
     align-items: center;
     flex-direction: row;
     font-size: 25px;
-    justify-content: flex-end;
     gap: 10px;
 }
 
-.navbar__logos>ul>li a {
+.navbar__icons>ul>li a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +66,7 @@
     font-weight: 100;
 }
 
-.navbar__logos>ul>li:hover {
+.navbar__icons>ul>li:hover {
     backdrop-filter: blur(16px);
     background-color: rgba(0, 0, 0, 0.5);
     transition: .5s;
@@ -75,12 +80,6 @@
 .color-white {
     transition: 0.5s;
     color: white;
-}
-
-@media screen and (max-width: 645px) {
-    .navbar__ul {
-        display: none;
-    }
 }
 
 /* navChild */
@@ -113,4 +112,22 @@
     transition: all 0.5s;
     z-index: -1;
     backdrop-filter: blur(4px);
+}
+
+
+/* Sidebar css */
+
+.navbar__menu {
+    font-size: 16px;
+    padding: 8px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 990px) {
+    .navbar__ul {
+        display: none;
+    }
 }
